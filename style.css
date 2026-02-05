@@ -1,0 +1,404 @@
+.home-page {
+  font-family: helvetica, arial, sans-serif;
+  background-image: url("images/header.jpg");
+  padding-bottom: 60px;
+  margin: 0;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  background-color: #e0e0e0;
+  padding-bottom: 60px;
+  margin: 0;
+  /* removes the left & right gap on browser */
+}
+
+header {
+  background-image: url("images/header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  /* move content left */
+}
+
+
+#homefreddy {
+  display: flex;
+  justify-content: center;
+  background-color: #e0e0e0;
+  text-align: center;
+  border-radius: 25px;
+  width: auto;
+  margin: 20px 0;
+  /* 0 to shift to the left, auto for center */
+  padding: 5px;
+  position: relative;
+  gap: 10px;
+}
+
+h1 {
+  color: #16123f;
+  text-align: center;
+  /* adds the colour options for main header*/
+}
+
+h1:hover {
+  color: brown
+}
+
+#top-nav {
+  background-color: #141414;
+  padding: 12px 20px;
+  text-align: center;
+  /* border-radius: 50px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 10px;
+  /* subtle sticky effect */
+  z-index: 100;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#top-nav a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#top-nav a:hover {
+  color: #c7ddcc;
+  text-decoration: underline;
+  font-weight: bold;
+  transform: scale(1.1);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 8px;
+  text-align: center;
+  z-index: 1000;
+  border-radius: 50px 50px 0 0;
+  /* rounded top corners */
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.fancy-section {
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  /* subtle gradient */
+  border-radius: 30px;
+  /* rounded corners */
+  padding: 40px 25px;
+  /* spacing inside */
+  margin: 40px auto;
+  /* space around and centered */
+  max-width: 900px;
+  /* constrain width */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  /* soft shadow for depth */
+  border-left: 6px solid brown;
+  /* optional colored accent on left edge */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fancy-section:hover {
+  transform: translateY(-5px);
+  /* subtle lift on hover */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  /* stronger shadow on hover */
+}
+
+.fancy-section h2 {
+  color: #16123f;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.fancy-section p {
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+
+h2 {
+  text-align: center;
+  /* centers the text horizontally */
+  color: #16123f;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+
+
+#beachball {
+  position: absolute;
+  /* must be absolute for dragging */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ffeb3b, #ff9800);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  cursor: grab;
+  user-select: none;
+  z-index: 1000;
+  top: calc(100vh - 140px);
+  /* start near bottom right */
+  left: calc(100vw - 80px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.1s ease;
+}
+
+#beachball:active {
+  cursor: grabbing;
+  transform: scale(0.95);
+}
+
+
+/* Images for About Me*/
+.me1 {
+  width: 300px !important;
+  height: 300px !important;
+  border-radius: 50%;
+}
+
+/* Styles for About Me image row */
+.image-row {
+  text-align: center;
+  /* centers any content inside */
+  margin-bottom: 30px;
+  /* spacing between image and columns */
+}
+
+.image-row .me1 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: inline-block;
+  /* inline so it respects text-align: center */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  float: none;
+  /* make sure float is gone */
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  /* show columns horizontally */
+  gap: 20px;
+  /* space between columns */
+}
+
+.flex-container .column {
+  flex: 1;
+  /* each column takes equal space */
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Images for Projects */
+.project-img {
+  width: 600%;
+  /* scale to container width */
+  max-width: 600px;
+  /* optional: limit max width */
+  height: auto;
+  /* maintain aspect ratio */
+  border-radius: 20px;
+  /* rounded corners */
+  object-fit: cover;
+  /* crop to fit nicely if needed */
+  display: block;
+  /* make it a block element so margin works */
+  margin: 20px auto;
+  /* center horizontally with spacing above/below */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  /* optional shadow for depth */
+  transition: transform 0.3s ease;
+  /* optional hover effect */
+}
+
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  /* stack rows vertically */
+  gap: 20px;
+  /* space between rows */
+}
+
+.project-container .column {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Images for Behind the Scenes */
+.gallery a {
+  flex: 1 1 300px;
+  max-width: 420px;
+}
+
+.gallery img {
+  flex: 1 1 300px;
+  max-width: 420px;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  /* keeps proportions */
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.gallery video {
+  width: 100%;
+  /* fill the container width */
+  height: 100%;
+  /* fill the same height as images */
+  max-width: 420px;
+  /* same as images */
+  aspect-ratio: 4 / 3;
+  /* match image ratio */
+  object-fit: cover;
+  /* crop/fit like images */
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+  display: block;
+  /* remove any inline video spacing */
+}
+
+
+
+.gallery video:hover {
+  transform: scale(1.05);
+}
+
+
+/* For PDF section (Reflection page) */
+.pdf-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* center horizontally */
+  margin: 40px auto;
+  width: 100%;
+}
+
+/* Center the heading */
+.pdf-section h4 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #16123f;
+}
+
+/* PDF iframe styling */
+.pdf-section iframe {
+  width: 90%;
+  /* stretch sideways */
+  max-width: 1100px;
+  /* limit on large screens */
+  height: 700px;
+  /* make it taller */
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Responsive for smaller screens */
+@media screen and (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+    /* stack columns vertically */
+  }
+}
+
+
+
+@keyframes slide-in {
+
+  /* animation */
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.calculator {
+  width: 240px;
+  margin: 50px auto;
+  border-radius: 15px;
+  padding: 20px;
+  background: #f5f5f5;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+#display {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  text-align: right;
+  font-size: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding-right: 10px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+button {
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #d4d4d4;
+}
+
+button:active {
+  background-color: #c0c0c0;
+}

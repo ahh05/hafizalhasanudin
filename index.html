@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- for HTML config -->
+
+<html lang="en"> <!-- english lang -->
+
+<head>
+  <title>Home</title> <!-- for the tab name -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"> <!-- for scaling based on diff devices -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> <!-- favicon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- font awesome for icons -->
+  <script src="" defer></script> <!-- improves page load speed -->
+</head>
+
+<!-- HERO / INTRO SECTION -->
+<header>
+  <h1 id="homefreddy"><i class="fas fa-home"> </i>Home</h1>
+</header>
+
+<body class="home-page"> <!--for main content -->
+<div id="top-nav">
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="About_Me.html"><i class="fas fa-user"></i> About Me</a>
+    <a href="Project.html"><i class="fas fa-briefcase"></i> Projects</a>
+    <a href="Terrarium.html"><i class="fas fa-leaf"></i> Terrarium</a>
+    <a href="Calculator.html"><i class="fas fa-calculator"></i> Calculator</a>
+    <a href="Behind_the_Scenes.html"><i class="fas fa-cogs"></i> Behind the Scenes</a>
+    <a href="Reflection.html"><i class="fas fa-lightbulb"></i> Reflection</a>
+  </div>
+
+  <!-- HOME CONTENT SECTION -->
+  <section class="rounded-section fancy-section">
+  <h1>What this site is about</h1>
+  <p>
+    <section id="home-content">
+    <p>
+      Welcome to my E-Portfolio - this site documents my website-building projects,
+      lessons learnt, and behind-the-scenes development process.
+    </p>
+    <p>
+      This website showcases my coursework, experiments, and reflections
+      as I explore web development and design. Each section in the
+      navigation bar represents a different aspect of my learning journey.
+    </p>
+
+    <ul>
+      <li><strong>About Me:</strong> Background and interests</li>
+      <li><strong>Projects:</strong> Development work and experiments</li>
+      <li><strong>Behind the Scenes:</strong> Process and challenges</li>
+      <li><strong>Reflection:</strong> Lessons learnt and takeaways</li>
+    </ul>
+  </section>
+  </p>
+</section>
+
+
+  <!-- beachball -->
+  <div id="beachball">🏖️</div>
+
+  <!-- FOOTER -->
+  <footer id="site-footer">
+    <a href="https://www.linkedin.com/in/hafizal-hasanudin-9077a3304/"
+      class="social-icon linkedin"
+      target="_blank">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+   <a href="https://github.com/ahh05/eportfolio.io"
+    class="social-icon github repo"
+    target="_blank">
+    <i class="fab fa-github"> Repository</i>
+    </a>
+
+    <a href="https://github.com/ahh05"
+    class="social-icon github profile"
+    target="_blank">
+    <i class="fab fa-github"> Profile</i>
+    </a>
+    <p>© 2025 | E-Portfolio </p>
+  </footer>
+
+  <!-- Link JS -->
+  <script src="script.js"></script>
+
+  <!-- Initialize dragging -->
+  <script>
+  window.onload = function() {
+    dragElement(document.getElementById("beachball"));
+  };
+  </script>
+
+</body>
+
+
+</html>

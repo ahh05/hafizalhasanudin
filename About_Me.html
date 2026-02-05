@@ -1,0 +1,122 @@
+<!DOCTYPE html> <!-- for HTML config -->
+
+<html lang="en"> <!-- english lang -->
+
+<head>
+  <title>About Me</title> <!-- for the tab name -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"> <!-- for scaling based on diff devices -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> <!-- favicon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- font awesome for icons -->
+  <script src="" defer></script> <!-- improves page load speed -->
+</head>
+
+<!-- HERO / INTRO SECTION -->
+<header>
+  <h1 id="homefreddy"><i class="fas fa-user"></i> About Me</h1>
+</header>
+
+<body> <!--for main content -->
+  <div id="top-nav">
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="About_Me.html"><i class="fas fa-user"></i> About Me</a>
+    <a href="Project.html"><i class="fas fa-briefcase"></i> Projects</a>
+    <a href="Terrarium.html"><i class="fas fa-leaf"></i> Terrarium</a>
+    <a href="Calculator.html"><i class="fas fa-calculator"></i> Calculator</a>
+    <a href="Behind_the_Scenes.html"><i class="fas fa-cogs"></i> Behind the Scenes</a>
+    <a href="Reflection.html"><i class="fas fa-lightbulb"></i> Reflection</a>
+  </div>
+
+  <!-- HOME CONTENT SECTION -->
+  <h2>About Me</h2>
+
+<div class="image-row">
+ <img class="me1" id="me1" alt="A picture of myself" src="./images/me1.jpg"> <!-- for images -->
+</div>
+
+<div class="stacked-rows">
+  <div class="flex-container">
+    <div class="column">
+      <h3>Background</h3>
+      <p>Hi, I'm <b>Hafizal!</b> I am currently a <i>Year 2.2 Dip. in Accountancy & Finance student.</i>
+        Outside of studies, I enjoy doing photography and I play the guitar (amatuer level though) during my free time.
+        However, if you ask me IT-related stuff like coding or debugging,
+        I will probably stare at the screen and blank out...</p>
+      <p> So I have decided to take this opportunity in Guided Learning
+        to learn a new skill. This portfolio site that I have coded from scratch, will showcase my journey from zero
+        knowledge to
+        creating this website you are currently viewing! </p>
+    </div>
+
+    <div class="column">
+      <h3>What is Guided Learning?</h3>
+      <p>Guided Learning is an elective subject where students can take control of their own learning in an area
+        they're interested in. Students will explore topics that build on what they already know or help them learn
+        something new.</p>
+        
+      <p>They'll plan and carry out their own learning project with guidance, working step by step
+        beyond the usual classroom setting. In the end, they'll create a portfolio that shows what they've learned
+        and how they've grown. All of this would be carried out under the Plan-Perform-Monitor-Reflect process.</p>
+    </div>
+
+    <div class="column">
+      <h3>What project am I doing?</h3>
+      <ul>
+        <li>Web development basics</li>
+        <li>HTML, CSS, JavaScript</li>
+        <p>My project focuses on learning the basics of HTML, CSS, and JavaScript through Guided Learning. The main goal of this project is to understand how websites are 
+          structured, styled, and made interactive, even though I do not come from an IT background.
+
+<h3>Why am I doing this project?</h3>
+<p>Website building has become increasingly common in today’s digital world, and many businesses rely heavily on online platforms to communicate with customers. 
+  As an Accountancy & Finance student, I felt that picking up a technical hard skill like basic web development would 
+  complement and broaden my overall skill set. This project also allows me to step out of my comfort zone 
+  and explore an area that I am less familiar with, especially since IT-related topics are not my strongest area.</p>
+
+<h3>How will I carry out this project?</h3>
+<p>I will start by learning the fundamentals of HTML to build the structure of a website, 
+  followed by CSS to style and improve its visual appearance. After that, I will explore basic JavaScript to add simple interactivity and functionality. 
+  Throughout the project, I will apply what I learn by creating a simple website and gradually improving it as I gain more understanding. </p>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+
+  <!-- beachball -->
+  <div id="beachball">🏖️</div>
+
+  <!-- FOOTER -->
+  <footer id="site-footer">
+    <a href="https://www.linkedin.com/in/hafizal-hasanudin-9077a3304/" class="social-icon linkedin" target="_blank">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://github.com/ahh05/eportfolio.io" class="social-icon github repo" target="_blank">
+      <i class="fab fa-github"> Repository</i>
+    </a>
+
+    <a href="https://github.com/ahh05" class="social-icon github profile" target="_blank">
+      <i class="fab fa-github"> Profile</i>
+    </a>
+    <p>© 2025 | E-Portfolio </p>
+  </footer>
+
+  <!-- Link JS -->
+  <script src="script.js"></script>
+
+  <!-- Initialize dragging -->
+  <script>
+    window.onload = function () {
+      dragElement(document.getElementById("beachball"));
+    };
+  </script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html> <!-- for HTML config -->
+
+<html lang="en"> <!-- english lang -->
+
+<head>
+  <title>Behind the Scenes</title> <!-- for the tab name -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"> <!-- for scaling based on diff devices -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> <!-- favicon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- font awesome for icons -->
+  <script src="" defer></script> <!-- improves page load speed -->
+</head>
+
+<!-- HERO / INTRO SECTION -->
+<header>
+  <h1 id="homefreddy"><i class="fas fa-cogs"></i> Behind the Scenes</a></h1>
+</header>
+
+<body> <!--for main content -->
+  <div id="top-nav">
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="About_Me.html"><i class="fas fa-user"></i> About Me</a>
+    <a href="Project.html"><i class="fas fa-briefcase"></i> Projects</a>
+    <a href="Terrarium.html"><i class="fas fa-leaf"></i> Terrarium</a>
+    <a href="Calculator.html"><i class="fas fa-calculator"></i> Calculator</a>
+    <a href="Behind_the_Scenes.html"><i class="fas fa-cogs"></i> Behind the Scenes</a>
+    <a href="Reflection.html"><i class="fas fa-lightbulb"></i> Reflection</a>
+  </div>
+
+
+
+  <!-- HOME CONTENT SECTION -->
+  <div class="project-container">
+    <div class="column">
+      <h3>#1 HTML Practice</h3>
+      <p>For this project, I followed a <a
+          href="https://www.linkedin.com/learning-login/share?account=76881922&forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fhtml-css-and-javascript-building-the-web%3Ftrk%3Dshare_ent_url%26shareId%3DRLhUbP4ASDWsH%252Foqx%252FVuUw%253D%253D"
+          target="_blank">LinkedIn Learning Course</a>
+        to guide me through creating a digital project page for a terrarium.
+        I started by learning HTML, which helped me structure the webpage and add headings, paragraphs, and images. The
+        course guided me through HTML basics like:</p>
+      <ul>
+        <li>Set up the basic HTML structure – using DOCTYPE html to indicate HTML5, html lang="en" for accessibility and
+          SEO, and head and body sections to separate metadata from visible content.</li>
+        <li>Add a webpage title and meta tags – setting the title defined the tab name, while meta tags ensured my
+          website supported international characters and scaled properly across devices. </li>
+        <li>Use headings, paragraphs, and divisions – h1> through h3> helped structure the page, while p> and div>
+          allowed me to organise content into sections like the terrarium containers and plant hold.</li>
+        <li>Assign IDs and classes – IDs (like #left-container) and classes (like .plant-holder) let me target specific
+          elements in CSS and JavaScript for styling and interactivity.</li>
+        <li>Embed images and videos – using img> and video> tags, I added visuals to enhance understanding and
+          engagement. Alt attributes ensured accessibility and fallback descriptions.</li>
+      </ul>
+    </div>
+
+    <!-- Image Gallery #1 -->
+    <div class="gallery">
+      <a href="images/html1.png" target="_blank">
+        <img src="images/html1.png" alt="HTML basics">
+      </a>
+
+      <a href="images/html2.png" target="_blank">
+        <img src="images/html2.png" alt="CSS styling">
+      </a>
+
+      <a href="images/html3.png" target="_blank">
+        <img src="images/html3.png" alt="Layout experiments">
+      </a>
+    </div>
+
+    <div class="column">
+      <h3>#2 CSS Practice</h3>
+      <ul>
+        <li>Apply basic styling to the webpage – setting the font family, text colours, and alignment for headings and
+          paragraphs. For example, I made the main title brown and centred it for better readability.</li>
+        <li>Use IDs and classes for styling – IDs like #left-container allowed me to style specific sections
+          differently,
+          while classes like .container or .plant-holder let me apply consistent styles across multiple elements.</li>
+        <li>Style containers and panels – I created left and right panels to display plant images, assigning widths,
+          background colours, and padding to organise content neatly.</li>
+        <li>Add interactive hover effects – for instance, hovering over the main heading or plant images triggered a
+          colour change or slight enlargement, adding dynamic interactivity.</li>
+        <li>Create animations – using @keyframes, I made the plants slide in when the page loaded, enhancing the user
+          experience.</li>
+        <li>Design the terrarium visually – I styled the jar walls, top, bottom, soil, and glossy highlights to resemble
+          a
+          real terrarium. I learned to use position: absolute, z-index, and opacity to layer elements realistically.
+        </li>
+      </ul>
+    </div>
+
+    <!-- Image Gallery #2 -->
+    <div class="gallery">
+      <a href="images/css1.png" target="_blank">
+        <img src="images/css1.png" alt="HTML basics">
+      </a>
+
+      <a href="images/css2a.png" target="_blank">
+        <img src="images/css2a.png" alt="CSS styling">
+      </a>
+
+      <a href="images/css2b.png" target="_blank">
+        <img src="images/css2b.png" alt="Layout experiments">
+      </a>
+      <a href="images/css3.png" target="_blank">
+        <img src="images/css3.png" alt="Layout experiments">
+      </a>
+      <a href="images/cssvid1.mp4" target="_blank">
+        <video controls>
+          <source src="images/cssvid1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </a>
+    </div>
+
+    <div class="column">
+      <h3>#3 JavaScript Practice</h3>
+      <ul>
+        <li>Understanding the Document Object Model (DOM) – I learned that the DOM represents the webpage as a tree of
+          objects, and JavaScript can manipulate these objects to update content dynamically.</li>
+        <li>Adding event listeners – I used event listeners to detect clicks, key presses, and other actions. For
+          example, clicking a plant or dragging an object triggered specific JavaScript functions.</li>
+        <li>Creating functions – Functions grouped instructions into reusable blocks of code, allowing me to perform
+          tasks like updating the terrarium or animating elements when called.</li>
+        <li>Using variables – I applied let for values that could change, const for fixed values, and understood when
+          var could be used for older syntax.</li>
+        <li>Making the webpage interactive – I learned to respond to user actions, such as dragging plants, triggering
+          animations, and dynamically updating the display without reloading the page.</li>
+        <li>Debugging and problem-solving – JavaScript often produced errors at first, so I learned to carefully read
+          error messages, test small code segments, and look up solutions on forums like StackOverflow.</li>
+      </ul>
+    </div>
+    <!-- Image Gallery #3 -->
+    <div class="gallery">
+      <a href="images/jsvid1.mp4" target="_blank">
+        <video controls>
+          <source src="images/jsvid1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </a>
+    </div>
+
+    <div class="column">
+      <h3>Challenges</h3>
+      <ul>
+        However, I faced issues that slowed my progress at certain stages.
+        This included:
+        <li>Images failing to load, due to an annotation that I had forgotten to close properly.</li>
+        <li>GitHub Pages - not loading the html files</li>
+        <li>PDFs that were inserted, were not loading</li>
+        <li>JavaScript not working expected - beachball feature</li>
+        <li>Debugging and problem-solving – JavaScript often produced errors at first, so I learned to carefully read
+          error messages, test small code segments, and look up solutions on forums like StackOverflow</li>
+      </ul>
+    </div>
+    <!-- Image Gallery #4 -->
+    <div class="gallery">
+      <div class="gallery">
+      <a href="images/challenge1.png" target="_blank">
+        <img src="images/challenge1.png" alt="Annotation issue">
+      </a>
+
+      <a href="images/challenge2.png" target="_blank">
+        <img src="images/challenge2.png" alt="PDF issue">
+      </a>
+
+      <a href="images/challenge3.png" target="_blank">
+        <img src="images/challenge3.png" alt="JS Beachball issue">
+      </a>
+      <a href="images/challenge4.png" target="_blank">
+        <img src="images/challenge4.png" alt="PDF insert issue">
+      </a>
+    </div>
+  </div>
+
+</section>
+
+
+  <!-- PDF EMBED -->
+  <div class="pdf-section">
+    <h4>My HTML, CSS, & JS Notes PDF:</h4>
+    <iframe width="900" height="500" src="./pdfs/Notes.pdf" title="Notes PDF" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+  </div>
+
+
+  <!-- beachball -->
+  <div id="beachball">🏖️</div>
+
+  <!-- FOOTER -->
+  <footer id="site-footer">
+    <a href="https://www.linkedin.com/in/hafizal-hasanudin-9077a3304/" class="social-icon linkedin" target="_blank">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://github.com/ahh05/eportfolio.io" class="social-icon github repo" target="_blank">
+      <i class="fab fa-github"> Repository</i>
+    </a>
+
+    <a href="https://github.com/ahh05" class="social-icon github profile" target="_blank">
+      <i class="fab fa-github"> Profile</i>
+    </a>
+    <p>© 2025 | E-Portfolio </p>
+  </footer>
+
+  <!-- Link JS -->
+  <script src="script.js"></script>
+
+  <!-- Initialize dragging -->
+  <script>
+    window.onload = function () {
+      dragElement(document.getElementById("beachball"));
+    };
+  </script>
+
+</body>
+
+
+</html>
