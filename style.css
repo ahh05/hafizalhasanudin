@@ -31,6 +31,7 @@ header {
   display: flex;
   justify-content: center;
   background-color: #e0e0e0;
+  color: #16123f;
   text-align: center;
   border-radius: 50px;
   width: auto;
@@ -41,8 +42,12 @@ header {
   gap: 10px;
 }
 
+#homefreddy:hover {
+  color:#e99a16;
+}
+
 h1 {
-  color: #16123f;
+  color: #ffffff;
   text-align: center;
   /* adds the colour options for main header*/
 }
@@ -130,6 +135,26 @@ footer {
   box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
+/* footer links */
+#footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+#footer-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+#footer-links a:hover {
+  color: #0077b5; /* LinkedIn blue on hover */
+}
+
+
 
 .fancy-section {
   background: #111827;
@@ -371,36 +396,6 @@ footer {
     /* stack columns vertically */
   }
 }
-
-
-
-/* CONTACT ME SECTION FOR INDEX */
-#contact-section {
-  background-color: #e0e0e0;
-  border-radius: 50px;
-  padding: 30px;
-  margin: 30px auto;
-  max-width: 600px;
-  text-align: center;
-}
-
-#contact-links {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 15px;
-}
-
-#contact-links a {
-  text-decoration: none;
-  color: #333;
-  font-size: 1.1rem;
-}
-
-#contact-links a:hover {
-  color: #0077b5; /* LinkedIn blue on hover */
-}
-
 
 
 @keyframes slide-in {
