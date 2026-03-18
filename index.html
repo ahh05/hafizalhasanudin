@@ -6,7 +6,11 @@
   <title>Home</title> <!-- for the tab name -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1"> <!-- for scaling based on diff devices -->
+  <!-- General styles -->
   <link rel="stylesheet" href="./style.css">
+
+  <!-- Page-specific styles -->
+  <link rel="stylesheet" href="./index.css">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> <!-- favicon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- font awesome for icons -->
@@ -23,37 +27,34 @@
   </nav>
 </header>
 
-<!-- HOME CONTENT SECTION -->
-<section class="rounded-section fancy-section">
-  <h1>What this site is about</h1>
-  <p>
-  <section id="home-content">
-    <p>
-      Welcome to my E-Portfolio - this site documents my website-building projects,
-      lessons learnt, and behind-the-scenes development process.
-    </p>
-    <p>
-      This website showcases my coursework, experiments, and reflections
-      as I explore web development and design. Each section in the
-      navigation bar represents a different aspect of my learning journey.
-    </p>
+<div class="image-row">
+ <img class="me1" id="me1" alt="A picture of myself" src="./images/header.jpg"> <!-- for images -->
+</div>
 
-    <ul>
-      <li><strong>About Me:</strong> Background and interests</li>
-      <li><strong>Projects:</strong> Development work and experiments</li>
-      <li><strong>Behind the Scenes:</strong> Process and challenges</li>
-      <li><strong>Reflection:</strong> Lessons learnt and takeaways</li>
-    </ul>
-  </section>
-  </p>
+
+<section id="h3-index">
+  <b>Welcome!</b>
+</section>
+<section id="h3-index-small">
+
+  <ui>
+    <p>I'm Hafizal Hasanudin.</p>
+    <p>A Year 3 Diploma in Accountancy & Finance student at Temasek Polytechnic.</p>
+  </ui>
 </section>
 
 <!-- CONTACT ME SECTION -->
 <section id="contact-section">
-  <h2><a href="mailto:kinghafizal@gmail.com"><i class="fas fa-clipboard"></i> Resume</a></h2>
-    <a href="index.html"><i class="fas fa-home"></i> Home</a>
-  <p>Feel free to reach out to me through any of the platforms below.</p>
-  <div id="contact-links">
+  <a href="mailto:kinghafizal@gmail.com"><i class="fas fa-clipboard"></i> Contact Me!</a>
+</section>
+
+
+
+
+
+<!-- FOOTER -->
+<footer id="site-footer">
+  <div id="footer-links">
     <a href="https://www.linkedin.com/in/hafizal-hasanudin-9077a3304/" target="_blank">
       <i class="fab fa-linkedin-in"></i> LinkedIn
     </a>
@@ -61,34 +62,9 @@
       <i class="fab fa-github"></i> GitHub
     </a>
   </div>
-</section>
-
-
-
-<!-- beachball -->
-<div id="beachball">🏖️</div>
-
-<!-- FOOTER -->
-<footer id="site-footer">
-  <a href="https://www.linkedin.com/in/hafizal-hasanudin-9077a3304/" class="social-icon linkedin" target="_blank">
-    <i class="fab fa-linkedin-in"></i>
-  </a>
-
-  <a href="https://github.com/ahh05" class="social-icon github profile" target="_blank">
-    <i class="fab fa-github"> Profile</i>
-  </a>
   <p>© 2026 | E-Portfolio </p>
 </footer>
 
-<!-- Link JS -->
-<script src="script.js"></script>
-
-<!-- Initialize dragging -->
-<script>
-  window.onload = function () {
-    dragElement(document.getElementById("beachball"));
-  };
-</script>
 
 </body>
 
