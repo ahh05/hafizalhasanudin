@@ -1,0 +1,90 @@
+#h3-index {
+  color: #e99a16;
+  margin-top: 10px auto;
+  margin-bottom: 20px;
+  font-size: 45px;
+  text-align: left;
+  margin-left: 40px;
+  max-width: 900px;
+  /* controls when text wraps */
+}
+
+#h3-index-small {
+  color: #ffffff;
+  margin-top: 40px auto;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 40px;
+  max-width: 900px;
+  /* controls when text wraps */
+}
+
+/* Images for About Me*/
+.me1 {
+  width: 300px !important;
+  height: 300px !important;
+  border-radius: 50%;
+}
+
+/* Styles for About Me image row */
+.image-row {
+  text-align: right;
+  /* centers any content inside */
+  margin-top: 40px;
+  /* spacing between image and columns */
+  margin-right: 200px;
+}
+
+.image-row .me1 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: inline-block;
+  /* inline so it respects text-align: center */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  float: none;
+  /* make sure float is gone */
+}
+
+
+/* CONTACT ME SECTION FOR INDEX PAGE */
+#contact-section {
+  background-color: #e99a16;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 20px 15px;
+  /* less padding = smaller box */
+  margin: 30px auto;
+  margin-bottom: 100px;
+  margin-left: 40px;
+  height:fit-content;
+  width: fit-content;
+  /* shrink to content */
+  min-width: 160px;
+  /* ensures rectangle shape */
+  text-align: center;
+}
+
+#contact-section a:hover {
+  color: #0077b5;
+  /* LinkedIn blue on hover */
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1B2A35;
+  color: #ffffff;
+  /* text colour */
+  padding: 8px;
+  text-align: center;
+  z-index: 1000;
+  border-radius: 50px 50px 0 0;
+  /* rounded top corners */
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
