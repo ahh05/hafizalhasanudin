@@ -3,14 +3,10 @@
 <html lang="en"> <!-- english lang -->
 
 <head>
-  <title>Resume</title> <!-- for the tab name -->
+  <title>Reflection</title> <!-- for the tab name -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1"> <!-- for scaling based on diff devices -->
-  <!-- General styles -->
   <link rel="stylesheet" href="./style.css">
-
-  <!-- Page-specific styles -->
-  <link rel="stylesheet" href="./Resume.css">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> <!-- favicon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- font awesome for icons -->
@@ -18,24 +14,25 @@
 </head>
 
 <!-- HERO / INTRO SECTION -->
-<header id="navbar">
-  <h1 id="homefreddy"><i class="fas fa-clipboard"></i> Resume</h1>
-  <nav id="top-nav">
-    <a href="index.html"><i class="fas fa-home"></i> Home</a>
-    <a href="About_Me.html"><i class="fas fa-user"></i> About Me</a>
-    <a href="Resume.html"><i class="fas fa-clipboard"></i> Resume</a>
-  </nav>
+<header>
+  <h1 id="homefreddy"><i class="fas fa-lightbulb"></i> Reflection</h1>
 </header>
 
-<body>
-  <section id="h3-resume-big">
-    <b>My Resume: </b>
-  </section>
+<body> <!--for main content -->
+  <div id="top-nav">
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="About_Me.html"><i class="fas fa-user"></i> About Me</a>
+    <a href="Project.html"><i class="fas fa-briefcase"></i> Projects</a>
+    <a href="Terrarium.html"><i class="fas fa-leaf"></i> Terrarium</a>
+    <a href="Calculator.html"><i class="fas fa-calculator"></i> Calculator</a>
+    <a href="Behind_the_Scenes.html"><i class="fas fa-cogs"></i> Behind the Scenes</a>
+    <a href="Reflection.html"><i class="fas fa-lightbulb"></i> Reflection</a>
+  </div>
 
   <!-- PDF EMBED  for Learning Contract-->
   <div class="pdf-section">
-    <iframe width="900" height="500" src="./pdfs/CV - Hafizal Hasanudin 2025.pdf" title="Learning Contract PDF"
-      frameborder="0"
+    <h4>Learning Contract PDF:</h4>
+    <iframe width="900" height="500" src="./pdfs/LC.pdf" title="Learning Contract PDF" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
     </iframe>
@@ -45,21 +42,21 @@
 
   <div class="project-container">
     <div class="column">
-
+      
       <ul>
-        <p>Overall, my Guided Learning journey pushed me out of my comfort zone as I had no
+        <p>Overall, my Guided Learning journey pushed me out of my comfort zone as I had no 
           prior experience in coding or
-          website development. I started by learning the basics of HTML, CSS, and JavaScript
-          through online platforms such
-          as LinkedIn Learning, and applied what I learnt through hands-on practice and mini
-          projects like the Terrarium
-          and Calculator.</p>
-
+        website development. I started by learning the basics of HTML, CSS, and JavaScript 
+        through online platforms such
+        as LinkedIn Learning, and applied what I learnt through hands-on practice and mini 
+        projects like the Terrarium
+        and Calculator.</p>
+        
         <p>Along the way, I faced challenges such as debugging errors and balancing my time with other
-          academic commitments, especially during busy periods in the semester. However, these challenges helped me
-          develop resilience, adaptability, and better time management. By the end of the project, I was able to
-          independently build and refine my own portfolio website, which gave me greater confidence as a self-directed
-          learner and showed how much I had progressed from the start of my Guided Learning journey.</l>
+        academic commitments, especially during busy periods in the semester. However, these challenges helped me
+        develop resilience, adaptability, and better time management. By the end of the project, I was able to
+        independently build and refine my own portfolio website, which gave me greater confidence as a self-directed
+        learner and showed how much I had progressed from the start of my Guided Learning journey.</l>
         </p>
     </div>
 
@@ -205,18 +202,33 @@
 
 
 
+      <!-- beachball -->
+      <div id="beachball">🏖️</div>
+
       <!-- FOOTER -->
       <footer id="site-footer">
-        <div id="footer-links">
-          <a href="https://www.linkedin.com/in/hafizal-hasanudin-9077a3304/" target="_blank">
-            <i class="fab fa-linkedin-in"></i> LinkedIn
-          </a>
-          <a href="https://github.com/ahh05" target="_blank">
-            <i class="fab fa-github"></i> GitHub
-          </a>
-        </div>
-        <p>© 2026 | E-Portfolio </p>
+        <a href="https://www.linkedin.com/in/hafizal-hasanudin-9077a3304/" class="social-icon linkedin" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/ahh05/eportfolio.io" class="social-icon github repo" target="_blank">
+          <i class="fab fa-github"> Repository</i>
+        </a>
+
+        <a href="https://github.com/ahh05" class="social-icon github profile" target="_blank">
+          <i class="fab fa-github"> Profile</i>
+        </a>
+        <p>© 2025 | E-Portfolio </p>
       </footer>
+
+      <!-- Link JS -->
+      <script src="script.js"></script>
+
+      <!-- Initialize dragging -->
+      <script>
+        window.onload = function () {
+          dragElement(document.getElementById("beachball"));
+        };
+      </script>
 
 </body>
 
