@@ -251,22 +251,6 @@ footer {
   /* make sure float is gone */
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  /* show columns horizontally */
-  gap: 20px;
-  /* space between columns */
-}
-
-.flex-container .column {
-  flex: 1;
-  /* each column takes equal space */
-  padding: 10px;
-  background-color: #fff;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
 
 /* Images for Projects */
