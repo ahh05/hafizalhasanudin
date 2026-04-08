@@ -68,6 +68,8 @@
   /* stack rows vertically */
   gap: 20px;
   /* space between rows */
+  width: 100px auto;
+  height: 100px auto;
 }
 
 .project-container-resume .column {
@@ -75,7 +77,9 @@
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 100px;
+  margin-left: 210px;
+  margin-right: 210px;
+  margin-top: 50px;
 }
 
 
