@@ -297,6 +297,7 @@ footer {
 .gallery a {
   flex: 1 1 300px;
   max-width: 420px;
+  margin-left: 210px;
 }
 
 .gallery img {
