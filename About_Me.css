@@ -20,6 +20,18 @@
   /* controls when text wraps */
 }
 
+#h3-abt-big {
+  color: #e99a16;
+  margin-top: 10px auto;
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-align: left;
+  margin-left: 210px;
+  margin-top: 100px;
+  max-width: 900px;
+  /* controls when text wraps */
+}
+
 /* Images for About Me*/
 .me1a {
   width: 300px !important;
@@ -63,6 +75,26 @@
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-container-abt {
+  display: flex;
+  flex-direction: column;
+  /* stack rows vertically */
+  gap: 20px;
+  /* space between rows */
+  width: 100px auto;
+  height: 100px auto;
+}
+
+.project-container-abt .column {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 210px;
+  margin-right: 210px;
+  margin-top: 50px;
 }
 
 footer {
